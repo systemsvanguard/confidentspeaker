@@ -1,0 +1,8 @@
+<img src="cinqueterre.jpg" class="rounded mx-auto d-block img-fluid" alt="Blog Image">
+
+  "name": "confidentsavvyspeaker",
+  "version": "2.0.0",
+  "description": "A blog focussed on helping you become a Confident a& Savvy presenter and public speak.",
+  
+  
+

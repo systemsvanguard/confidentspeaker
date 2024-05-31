@@ -1,0 +1,36 @@
+/* Portfolio site for fullstack developer Ryan Hunter | ryan@RyanHunter.org | GitHub handle : SystemsVanguard  */
+
+.myheading {
+  /* color:#00008b; */
+  color: red;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.myheading2 {
+  color: #008b00;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.myheading3 {
+  color: #008b00;
+  font-weight: bold;
+}
+
+.footerTitle {
+  color: #00008b;
+  font-weight: bold;
+  font-family: 'Mukta Malar', Helvetica, sans-serif;
+  font-size: 1.875em;
+}
+
+/* Styling for the Quote of the Day Script */
+.quotetext {
+  font-weight: bold;
+  color: #00008b; /* blue */
+  font-size: 125%;
+}
+.quotesource {
+  font-style: italic;
+  color: #008b00; /* green */
+  font-size: 90%;
+}

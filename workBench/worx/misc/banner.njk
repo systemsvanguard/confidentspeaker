@@ -1,0 +1,99 @@
+<container  class="has-text-centered">
+	<div class="my-2" id="inspirational_quotes" >Insert quotation below here!</div>
+</container>
+
+
+<script type="text/javascript">
+	/* Random Quote of the Day Generator in JavaScript */
+	quotations = [];
+	source = [];
+	quotesHTML = "";
+
+	/* list of quotations */		
+     quotations[0]='Things may come to those who wait, but only the things left by those who hustle.';  source[0]='Abraham Lincoln';
+     quotations[1]='A person who never made a mistake never tried anything new';  source[1]='Albert Einstein';
+     quotations[2]='Strive not to be a success, but rather to be of value';  source[2]='Albert Einstein';
+     quotations[3]='The most common way people give up their power is by thinking they don\'t have any';  source[3]='Alice Walker';
+     quotations[4]='The most difficult thing is the decision to act, the rest is merely tenacity';  source[4]='Amelia Earhart';
+     quotations[5]='Certain things catch your eye, but pursue only those that capture the heart';  source[5]='Ancient Indian Proverb';
+     quotations[6]='Nobody ever drowned in his own sweat.';  source[6]='Ann Landers';
+     quotations[7]='How wonderful it is that nobody need wait a single moment before starting to improve the world';  source[7]='Anne Frank';
+	 quotations[8]='It is during our darkest moments that we must focus to see the light';  source[8]='Aristotle Onassis';
+     quotations[9]='The mind is the limit. As long as the mind can envision the fact that you can do something, you can do it, as long as you really believe 100 percent';  source[9]='Arnold Schwarzenegger';
+     quotations[10]='You are never really playing an opponent. You are playing yourself, your own highest standards, and when you reach your limits, that is real joy';  source[10]='Arthur Ashe';
+     quotations[11]='Nothing is impossible, the word itself says \"I\'m possible\"!';  source[11]='Audrey Hepburn';
+     quotations[12]='The question isn\'t who is going to let me\; it\'s who is going to stop me';  source[12]='Ayn Rand';
+     quotations[13]='If you can\'t outplay them, outwork them';  source[13]='Ben Hogan';
+     quotations[14]='What\'s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do';  source[14]='Bob Dylan';
+     quotations[15]='If you want to lift yourself up, lift up someone else';  source[15]='Booker T. Washington';
+     quotations[16]='All growth depends upon activity. There is no development physically or intellectually without effort, and effort means work.';  source[16]='Calvin Coolidge';
+     quotations[17]='The only way to achieve the impossible is to believe it is possible';  source[17]='Charles Kingsleigh';
+     quotations[18]='Life is 10% what happens to me and 90% of how I react to it';  source[18]='Charles Swindoll';
+     quotations[19]='Everything has beauty, but not everyone can see';  source[19]='Confucius';
+     quotations[20]='Remember that not getting what you want is sometimes a wonderful stroke of luck';  source[20]='Dalai Lama';
+     quotations[21]='Success isn\'t always about greatness. It\'s about consistency. Consistent hard work leads to success. Greatness will come.';  source[21]='Dwayne \"The Rock\" Johnson';
+     quotations[22]='Remember no one can make you feel inferior without your consent';  source[22]='Eleanor Roosevelt';
+     quotations[23]='To handle yourself, use your head\; to handle others, use your heart';  source[23]='Eleanor Roosevelt';
+     quotations[24]='Build your own dreams, or someone else will hire you to build theirs';  source[24]='Farrah Gray';
+     quotations[25]='Everything you\'ve ever wanted is on the other side of fear';  source[25]='George Addair';
+     quotations[26]='Without hard work, nothing grows but weeds.';  source[26]='Gordon B. Hinckley';
+     quotations[27]='Don\'t work for recognition, but do work worthy of recognition';  source[27]='H. Jackson Brown, Jr.';
+     quotations[28]='The difference between greed and ambition is a greedy person desires things he isn\'t prepared to work for.';  source[28]='Habeeb Akande';
+     quotations[29]='When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us';  source[29]='Helen Keller';
+     quotations[30]='When everything seems to be going against you, remember that the airplane takes off against the wind, not with it';  source[30]='Henry Ford';
+     quotations[31]='Whether you think you can or you think you can\'t, you\'re right';  source[31]='Henry Ford';
+     quotations[32]='Limitations live only in our minds. But if we use our imaginations, our possibilities become limitless';  source[32]='Jamie Paolinetti';
+     quotations[33]='I would visualize things coming to me. It would just make me feel better. Visualization works if you work hard. That\'s the thing. You can\'t just visualize and go eat a sandwich';  source[33]='Jim Carrey';
+     quotations[34]='If you go to work on your goals, your goals will go to work on you. If you go to work on your plan, your plan will go to work on you. Whatever good things we build end up building us';  source[34]='Jim Rohn';
+     quotations[35]='Never give up! Failure and rejection are only the first step to succeeding';  source[35]='Jim Valvano';
+     quotations[36]='I can\'t change the direction of the wind, but I can adjust my sails to always reach my destination';  source[36]='Jimmy Dean';
+     quotations[37]='Dreams don\'t work unless you do.';  source[37]='John C. Maxwell';
+     quotations[38]='When I was 5 years old, my mother always told me that happiness was the key to life. When I went to school, they asked me what I wanted to be when I grew up. I wrote down \"happy\". They told me I didn\'t understand the assignment, and I told them they didn\'t understand life';  source[38]='John Lennon';
+     quotations[39]='I have been impressed with the urgency of doing. Knowing is not enough\; we must apply. Being willing is not enough\; we must do';  source[39]='Leonardo da Vinci';
+     quotations[40]='Too many of us are not living our dreams because we are living our fears';  source[40]='Les Brown';
+     quotations[41]='Twenty years from now you will be more disappointed by the things that you didn\'t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover';  source[41]='Mark Twain';
+     quotations[42]='Whatever your life\'s work is, do it well. A man should do his job so well that the living, the dead, and the unborn could do it no better';  source[42]='Martin Luther King, Jr.';
+     quotations[43]='The difference between try and triumph is just a little umph!';  source[43]='Marvin Phillips';
+     quotations[44]='I\'ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel';  source[44]='Maya Angelou';
+     quotations[45]='Nothing will work unless you do';  source[45]='Maya Angelou';
+     quotations[46]='You can\'t use up creativity. The more you use, the more you have';  source[46]='Maya Angelou';
+     quotations[47]='I\'ve missed more than 9000 shots in my career. I\'ve lost almost 300 games. 26 times I\'ve been trusted to take the game winning shot and missed. I\'ve failed over and over and over again in my life. And that is why I succeed';  source[47]='Michael Jordan';
+     quotations[48]='You\'re never a loser until you quit trying';  source[48]='Mike Ditka';
+     quotations[49]='I alone cannot change the world, but I can cast a stone across the water to create many ripples';  source[49]='Mother Teresa';
+     quotations[50]='Whatever the mind of man can conceive and believe, it can achieve';  source[50]='Napoleon Hill';
+     quotations[51]='Perseverance is the hard work you do after you get tired of doing the hard work you already did.';  source[51]='Newt Gingrich';
+     quotations[52]='Change your thoughts and you change your world';  source[52]='Norman Vincent Peale';
+     quotations[53]='If you look at what you have in life, you\'ll always have more. If you look at what you don\'t have in life, you\'ll never have enough';  source[53]='Oprah Winfrey';
+     quotations[54]='Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do';  source[54]='Pele';
+     quotations[55]='We can easily forgive a child who is afraid of the dark\; the real tragedy of life is when men are afraid of the light';  source[55]='Plato';
+     quotations[56]='What we achieve inwardly will change outer reality';  source[56]='Plutarch';
+     quotations[57]='The only person you are destined to become is the person you decide to be';  source[57]='Ralph Waldo Emerson';
+     quotations[58]='Don\'t judge each day by the harvest you reap but by the seeds that you plant';  source[58]='Robert Louis Stevenson';
+     quotations[59]='We can\'t help everyone, but everyone can help someone';  source[59]='Ronald Reagan';
+     quotations[60]='I have learned over the years that when one\'s mind is made up, this diminishes fear';  source[60]='Rosa Parks';
+     quotations[61]='Hard work spotlights the character of people: some turn up their sleeves, some turn up their noses, and some don\'t turn up at all.';  source[61]='Sam Ewing';
+     quotations[62]='If you\'re offered a seat on a rocket ship, don\'t ask what seat! Just get on';  source[62]='Sheryl Sandberg';
+     quotations[63]='I am not a product of my circumstances. I am a product of my decisions';  source[63]='Stephen Covey';
+     quotations[64]='I am not a product of my circumstances. I am a product of my decisions';  source[64]='Stephen Covey';
+     quotations[65]='The only way to do great work is to love what you do';  source[65]='Steve Jobs';
+     quotations[66]='Believe you can and you\'re halfway there';  source[66]='Theodore Roosevelt';
+     quotations[67]='When you play, play hard\; when you work, don\'t play at all.';  source[67]='Theodore Roosevelt';
+     quotations[68]='The three great essentials to achieve anything worthwhile are, first, hard work\; second, stick-to-itiveness\; third, common sense.';  source[68]='Thomas A. Edison';
+     quotations[69]='I\'m a greater believer in luck, and I find the harder I work the more I have of it.';  source[69]='Thomas Jefferson';
+     quotations[70]='Who you are tomorrow begins with what you do today.';  source[70]='Tim Fargo';
+     quotations[71]='In baseball and in business, there are three types of people. Those who make it happen, those who watch it happen, and those who wonder what happened';  source[71]='Tommy Lasorda';
+     quotations[72]='A truly rich man is one whose children run into his arms when his hands are empty';  source[72]='Unknown';
+     quotations[73]='Those at the top of the mountain didn\'t fall there.';  source[73]='Unknown';
+     quotations[74]='It\'s not whether you get knocked down\; it\'s whether you get up';  source[74]='Vince Lombardi';
+     quotations[75]='Perfection is not attainable, but if we chase perfection we can catch excellence';  source[75]='Vince Lombardi';
+     quotations[76]='I would rather die of passion than of boredom';  source[76]='Vincent van Gogh';
+     quotations[77]='If you hear a voice within you say \"you cannot paint,\" then by all means paint and that voice will be silenced';  source[77]='Vincent Van Gogh';
+     quotations[78]='Do or do not. There is no try';  source[78]='Yoda';		
+
+
+
+	/* Quote generation script */
+	index = Math.floor(Math.random() * quotations.length);
+	quotesHTML += "&ldquo;<span class='has-text-link has-text-weight-semibold'>" + quotations[index] + "</span>&rdquo; &mdash; <span class='has-text-success is-italic'>" + source[index] + "</span>";
+	document.getElementById("inspirational_quotes").innerHTML = quotesHTML;	
+</script>

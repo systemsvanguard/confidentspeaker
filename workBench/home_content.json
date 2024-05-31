@@ -1,0 +1,40 @@
+const articles = [
+  {
+    id: 1,
+    title: 'Thinking, Fast and Slow',
+    author: 'Daniel Kahneman',
+    pages: '499',
+    price: '9.79',
+    synopsis: 'In the international bestseller, Thinking, Fast and Slow, Daniel Kahneman.',
+    story: ['In the international bestseller', 'Thinking, Fast and Slow', 'Daniel Kahneman.']
+  },
+  {
+    id: 2,
+    title: 'The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future',
+    author: 'Kevin Kelly',
+    pages: '336',
+    price: '19.04',
+    synopsis:
+      'Much of what will happen in the next thirty years is inevitable, driven by technological trends that are already in motion. In this fascinating, provocative new book, Kevin Kelly provides.',
+    story: [
+      "Hell for me is a maxed out dev laptop with all the tools BUT the keyboard doesn't work",
+      'Has happened before.'
+    ]
+  },
+  {
+    id: 3,
+    title: 'Surviving the Tech Storm: Strategy in Times of Technological Uncertainty',
+    author: 'Nicklas Bergman',
+    pages: '210',
+    price: '8.03',
+    synopsis:
+      'Are we living in a time that is more exciting, more dangerous and more encouraging than any previous era in world history?',
+    story: [
+      'In the international bestseller',
+      'Head cook, bottle-washer, & bean counter.',
+      'Netizen. And forever',
+      'Coder. I love to code.'
+    ]
+  }
+  // Add the rest of your articles here
+]
